@@ -109,7 +109,7 @@ const AllPosts = () => {
          <Button
              variant="contained"
              sx={{                      
-                  backgroundColor: '#1a73e8',  /
+                  backgroundColor: '#1a73e8', 
                   color: 'white',
                   minWidth: '100px',
                   height: 43,       
