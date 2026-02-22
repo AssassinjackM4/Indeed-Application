@@ -2,16 +2,10 @@ FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
-# Copy ENTIRE backend folder (includes .mvn/)
-COPY . .
+# Copy Copy ONLY pre-built JAR
+COPY target/*.jar app.jar
 
-#  Make mvnw executable  
-RUN chmod +x mvnw
+# Use Render's PORT 
+EXPOSE ${PORT:-10000}
 
-# Build JAR
-RUN ./mvnw clean package -DskipTests
-RUN mv target/*.jar app.jar
-
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar /app/app.jar"]
