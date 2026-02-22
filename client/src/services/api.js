@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const API_URL = "http://localhost:8080";
+const API_URL = "http://localhost:9080";
 
 
 export const savePost = async (payload) => {
