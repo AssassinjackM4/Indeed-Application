@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-@CrossOrigin
+
 public class PostController {
 
     final PostService postService;
