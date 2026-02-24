@@ -4,7 +4,6 @@ import com.indeed.server.dao.PostDao;
 import com.indeed.server.dto.PostDTO;
 import com.indeed.server.model.PostModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.support.SimpleMongoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
