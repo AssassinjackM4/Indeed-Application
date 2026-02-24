@@ -14,7 +14,6 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("")
 @Slf4j
 @RequiredArgsConstructor
 public class PostController {
