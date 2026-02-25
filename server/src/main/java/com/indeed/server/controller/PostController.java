@@ -14,22 +14,23 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin(origins = "*")
 @Slf4j
 @RequiredArgsConstructor
 public class PostController {
 
-    final PostService postService;
-    @PostMapping(APIConstants.SAVE_POST)
-    public PostModel savePost(@Valid @RequestBody PostDTO postDTORequest) {
-        log.info("Saving Post ######");
+    private final PostService postService;
 
-        return this.postService.savePost(postDTORequest);
+    @PostMapping(APIConstants.SAVE_POST)
+    public ResponseEntity<PostModel> savePost(@Valid @RequestBody PostDTO postDTORequest) {
+        log.info("Saving Post ######");
+        return ResponseEntity.ok(this.postService.savePost(postDTORequest));
     }
 
     @GetMapping(APIConstants.GET_ALL_POSTS)
-    public List<PostModel> getAllPosts() {
+    public ResponseEntity<List<PostModel>> getAllPosts() {
         log.info("Getting All Posts ######");
-        return this.postService.getAllPosts();
+        return ResponseEntity.ok(this.postService.getAllPosts());
     }
 
     @DeleteMapping(APIConstants.DELETE_POST+"/{id}")

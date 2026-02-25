@@ -1,0 +1,7 @@
+
+{
+  "rewrites": [
+    {"source": "/posts(.*)", "destination": "https://indeed-application.onrender.com/posts$1"},
+    {"source": "/(.*)", "destination": "/index.html"}
+  ]
+}

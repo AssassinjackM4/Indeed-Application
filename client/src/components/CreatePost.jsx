@@ -50,10 +50,10 @@ const defaultobj = {
 }
 
 const options = {
-    type: ["Online", "Offline", "Remote"],
-    experience: ["0-2 Years", "3-5 Years", "5-8 Years", "8 and more Years"],
-    technology: ["Java", "C++", "React", "SpringBoot", "Python", "HTML", "CSS", "MySQL", "MongoDB", "C#", "Javascript","Go","Kotlin","Flutter", "Figma", "Angular", "Node.js", "Docker", "AWS", "Ruby", "R" ],                  
-    salary:["Rs 0-300000", "Rs 300000-500000", "Rs 500000-800000", "Rs 800000-1300000", "Rs 130000 and more"]
+    type: ["Online", "Offline", "Remote", "Hybrid", "Internship"],
+    experience: ["0-2 Years", "3-5 Years", "5-8 Years", "8-10 Years", "10+ More Years"],
+    technology: ["Java", "C++", "React", "SpringBoot", "Python", "HTML", "CSS", "MySQL", "MongoDB", "C#", "Javascript", "Artificial Intelligence", "Machine Learning", "Data Science", "Go","Kotlin", "Swift", "Flutter", "Next.js", "React Native", "Figma", "Angular", "Node.js", "Docker", "AWS", "Ruby", "R" ],                  
+    salary:["Rs 0-300000", "Rs 300000-500000", "Rs 500000-800000", "Rs 800000-1200000", "Rs 1200000-1800000", "Rs 1800000-2500000", "Rs 2500000 and more"]
 }
 
 
